@@ -1,0 +1,13 @@
+@use "../abstracts/variables" as v;
+
+.bg-coffee {
+  background-color: v.$coffee !important;
+}
+
+.text-coffee {
+  color: v.$coffee !important;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}

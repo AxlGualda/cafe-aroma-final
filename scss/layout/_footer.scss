@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+footer {
+  font-size: 0.9rem;
+
+  div {
+    @include m.flex-center(1.5rem);
+  }
+}

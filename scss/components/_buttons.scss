@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+@use "sass:color";
+
+
+.btn-coffee {
+  background-color: v.$coffee;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border: 2px solid transparent;
+  display: inline-block;
+  @include m.transition(background-color, transform, box-shadow);
+
+  &:hover {
+    background-color: color.adjust(v.$coffee, $lightness: -10%);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  }
+}

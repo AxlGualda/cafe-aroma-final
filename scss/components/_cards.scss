@@ -1,0 +1,38 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+@use "../abstracts/extends" as e; 
+
+
+
+.card {
+  @extend %shadow-hover;
+
+  border: 2px solid transparent;
+  @include m.transition(
+    transform v.$transition-fast,
+    box-shadow v.$transition-fast,
+    border-color 0.3s ease
+  );
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    border-color: v.$coffee;
+
+    .card-img-top {
+      transform: scale(1.03);
+    }
+  }
+}
+
+.card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid #eee;
+  @include m.transition(transform 0.3s ease);
+}
+
+.card-title {
+  font-weight: bold;
+}

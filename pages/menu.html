@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- SEO -->
+    <title>Menú | Café Aroma – Café de especialidad y pastelería artesanal</title>
+    <meta name="description" content="Conocé el menú de Café Aroma. Café espresso, cappuccino, medialunas y tostadas elaborados con ingredientes de calidad en Palermo.">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- CSS compilado desde SASS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="bg-light">
+
+    <!-- HEADER / NAV -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-coffee px-3" aria-label="Navegación principal">
+            <a class="navbar-brand fw-bold" href="../index.html">Café Aroma</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navmenu"
+                aria-controls="navmenu"
+                aria-expanded="false"
+                aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html" aria-current="page">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container py-5">
+
+        <section>
+            <h1 class="text-center text-coffee mb-4">
+                Nuestro menú
+            </h1>
+
+            <p class="text-center mb-4">
+                Descubrí nuestras opciones de café de especialidad y pastelería artesanal.
+            </p>
+
+            <div class="text-center mb-4">
+                <a href="../index.html" class="btn-coffee" aria-label="Volver a la página de inicio">
+                    Volver al Inicio
+                </a>
+            </div>
+        </section>
+
+        <!-- GRILLA DE PRODUCTOS -->
+        <section class="menu-grid">
+
+            <article class="card shadow-sm h-100">
+                <img src="../img/espresso.jpg" class="card-img-top"
+                     alt="Café espresso servido en taza pequeña en Café Aroma">
+                <div class="card-body">
+                    <h2 class="card-title text-coffee h5">Espresso</h2>
+                    <p class="card-text">Café intenso y aromático.</p>
+                    <a href="espresso.html" class="btn btn-outline-secondary btn-sm mt-2"
+                       aria-label="Ver detalle del café Espresso">
+                        Ver más
+                    </a>
+                </div>
+            </article>
+
+            <article class="card shadow-sm h-100">
+                <img src="../img/cappuccino.jpg" class="card-img-top"
+                     alt="Café cappuccino con leche espumada servido en Café Aroma">
+                <div class="card-body">
+                    <h2 class="card-title text-coffee h5">Cappuccino</h2>
+                    <p class="card-text">Con leche espumada y canela.</p>
+                    <a href="cappuccino.html" class="btn btn-outline-secondary btn-sm mt-2"
+                       aria-label="Ver detalle del Cappuccino">
+                        Ver más
+                    </a>
+                </div>
+            </article>
+
+            <article class="card shadow-sm h-100">
+                <img src="../img/medialunas.jpg" class="card-img-top"
+                     alt="Medialunas artesanales recién horneadas">
+                <div class="card-body">
+                    <h2 class="card-title text-coffee h5">Medialunas</h2>
+                    <p class="card-text">Dulces, recién horneadas.</p>
+                    <a href="medialunas.html" class="btn btn-outline-secondary btn-sm mt-2"
+                       aria-label="Ver detalle de las Medialunas">
+                        Ver más
+                    </a>
+                </div>
+            </article>
+
+            <article class="card shadow-sm h-100">
+                <img src="../img/tostadas.jpg" class="card-img-top"
+                     alt="Tostadas artesanales con mermelada">
+                <div class="card-body">
+                    <h2 class="card-title text-coffee h5">Tostadas</h2>
+                    <p class="card-text">Pan artesanal con mermelada.</p>
+                    <a href="tostadas.html" class="btn btn-outline-secondary btn-sm mt-2"
+                       aria-label="Ver detalle de las Tostadas">
+                        Ver más
+                    </a>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-coffee text-white text-center py-3 mt-5">
+        <p class="mb-2">© 2025 Café Aroma | Todos los derechos reservados</p>
+
+        <div class="d-flex justify-content-center gap-4 fs-4">
+            <a href="https://www.instagram.com/" target="_blank" class="text-white" aria-label="Instagram de Café Aroma">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" class="text-white" aria-label="Facebook de Café Aroma">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://wa.me/5491112345678" target="_blank" class="text-white" aria-label="WhatsApp de Café Aroma">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

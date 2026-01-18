@@ -1,0 +1,12 @@
+// Flex centrado
+@mixin flex-center($gap: 0) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+// Transiciones suaves
+@mixin transition($props...) {
+  transition: $props;
+}
